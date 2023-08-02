@@ -7,7 +7,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import torch
 import cv2
 
-torch.use_deterministic_algorithms(False)
+torch.set_deterministic(False)
 
 import supervision as sv
 from groundingdino.util.inference import Model
